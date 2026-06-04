@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Franco Enríquez Ximena - Historial Clínico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00a896;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #028090;
+            margin: 0;
+            font-size: 24px;
+        }
+        .btn-regresar {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-regresar:hover {
+            background-color: #00a896;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f2f7f7;
+            color: #028090;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f9fbfb;
+        }
+        .badge-id {
+            background-color: #eef2f7;
+            color: #334e68;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .text-diagnostico {
+            color: #c62828;
+            font-weight: 500;
+        }
+        .text-tratamiento {
+            color: #00796b;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dentista Franco Enríquez Ximena - Historial Clínico</h1>
+        <button class="btn-regresar" onclick="window.history.back();">← Regresar</button>
+    </header>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Historial</th>
+                    <th>ID Paciente</th>
+                    <th>ID Personal</th>
+                    <th>Fecha Atención</th>
+                    <th>Diagnóstico</th>
+                    <th>Tratamiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>901</td>
+                    <td><span class="badge-id">101</span></td>
+                    <td>01</td>
+                    <td>2026-05-11</td>
+                    <td class="text-diagnostico">Tercer molar impactado</td>
+                    <td class="text-tratamiento">Exodoncia (Extracción)</td>
+                </tr>
+                <tr>
+                    <td>902</td>
+                    <td><span class="badge-id">102</span></td>
+                    <td>02</td>
+                    <td>2026-05-12</td>
+                    <td class="text-diagnostico">Pulpitis irreversible</td>
+                    <td class="text-tratamiento">Endodoncia pieza 21</td>
+                </tr>
+                <tr>
+                    <td>903</td>
+                    <td><span class="badge-id">108</span></td>
+                    <td>05</td>
+                    <td>2026-05-11</td>
+                    <td class="text-diagnostico">Placa bacteriana leve</td>
+                    <td class="text-tratamiento">Limpieza Ultrasónica</td>
+                </tr>
+                <tr>
+                    <td>904</td>
+                    <td><span class="badge-id">101</span></td>
+                    <td>01</td>
+                    <td>2026-05-18</td>
+                    <td class="text-diagnostico">Post-operatorio normal</td>
+                    <td class="text-tratamiento">Revisión de puntos</td>
+                </tr>
+                <tr>
+                    <td>905</td>
+                    <td><span class="badge-id">106</span></td>
+                    <td>02</td>
+                    <td>2026-05-04</td>
+                    <td class="text-diagnostico">Caries grado 2</td>
+                    <td class="text-tratamiento">Resina compuesta</td>
+                </tr>
+                <tr>
+                    <td>906</td>
+                    <td><span class="badge-id">104</span></td>
+                    <td>04</td>
+                    <td>2026-04-20</td>
+                    <td class="text-diagnostico">Dentición temporal sana</td>
+                    <td class="text-tratamiento">Aplicación de flúor</td>
+                </tr>
+                <tr>
+                    <td>907</td>
+                    <td><span class="badge-id">109</span></td>
+                    <td>03</td>
+                    <td>2026-05-01</td>
+                    <td class="text-diagnostico">Maloclusión clase I</td>
+                    <td class="text-tratamiento">Ajuste de Brackets</td>
+                </tr>
+                <tr>
+                    <td>908</td>
+                    <td><span class="badge-id">107</span></td>
+                    <td>09</td>
+                    <td>2026-05-06</td>
+                    <td class="text-diagnostico">Gingivitis</td>
+                    <td class="text-tratamiento">Raspado y alisado</td>
+                </tr>
+                <tr>
+                    <td>909</td>
+                    <td><span class="badge-id">105</span></td>
+                    <td>01</td>
+                    <td>2026-04-15</td>
+                    <td class="text-diagnostico">Corona desajustada</td>
+                    <td class="text-tratamiento">Cementado de corona</td>
+                </tr>
+                <tr>
+                    <td>910</td>
+                    <td><span class="badge-id">110</span></td>
+                    <td>04</td>
+                    <td>2026-05-02</td>
+                    <td class="text-diagnostico">Caries incipiente</td>
+                    <td class="text-tratamiento">Sellante de fosetas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

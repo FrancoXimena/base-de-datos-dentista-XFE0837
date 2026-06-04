@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Franco Enríquez Ximena - Horarios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00a896;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #028090;
+            margin: 0;
+            font-size: 24px;
+        }
+        .btn-regresar {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-regresar:hover {
+            background-color: #00a896;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f2f7f7;
+            color: #028090;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f9fbfb;
+        }
+        .badge-dia {
+            background-color: #eef2f7;
+            color: #334e68;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .badge-consultorio {
+            background-color: #e0f2f1;
+            color: #00796b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .hora {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dentista Franco Enríquez Ximena - Control de Horarios</h1>
+        <button class="btn-regresar" onclick="window.history.back();">← Regresar</button>
+    </header>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Horario</th>
+                    <th>ID Personal</th>
+                    <th>Día Semana</th>
+                    <th>Hora Entrada</th>
+                    <th>Hora Salida</th>
+                    <th>Consultorio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>01</td>
+                    <td><span class="badge-dia">Lunes</span></td>
+                    <td class="hora">09:00</td>
+                    <td class="hora">14:00</td>
+                    <td><span class="badge-consultorio">Cubículo 1</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>01</td>
+                    <td><span class="badge-dia">Miércoles</span></td>
+                    <td class="hora">09:00</td>
+                    <td class="hora">14:00</td>
+                    <td><span class="badge-consultorio">Cubículo 1</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>02</td>
+                    <td><span class="badge-dia">Martes</span></td>
+                    <td class="hora">10:00</td>
+                    <td class="hora">18:00</td>
+                    <td><span class="badge-consultorio">Cubículo 2</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>02</td>
+                    <td><span class="badge-dia">Jueves</span></td>
+                    <td class="hora">10:00</td>
+                    <td class="hora">18:00</td>
+                    <td><span class="badge-consultorio">Cubículo 2</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>03</td>
+                    <td><span class="badge-dia">Lunes</span></td>
+                    <td class="hora">15:00</td>
+                    <td class="hora">20:00</td>
+                    <td><span class="badge-consultorio">Cubículo 1</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>03</td>
+                    <td><span class="badge-dia">Viernes</span></td>
+                    <td class="hora">09:00</td>
+                    <td class="hora">15:00</td>
+                    <td><span class="badge-consultorio">Cubículo 1</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>04</td>
+                    <td><span class="badge-dia">Sábado</span></td>
+                    <td class="hora">08:00</td>
+                    <td class="hora">13:00</td>
+                    <td><span class="badge-consultorio">Cubículo 3</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>05</td>
+                    <td><span class="badge-dia">Lunes</span></td>
+                    <td class="hora">09:00</td>
+                    <td class="hora">18:00</td>
+                    <td><span class="badge-consultorio">Limpieza A</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>09</td>
+                    <td><span class="badge-dia">Miércoles</span></td>
+                    <td class="hora">15:00</td>
+                    <td class="hora">19:00</td>
+                    <td><span class="badge-consultorio">Cubículo 3</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td><span class="badge-dia">Lunes</span></td>
+                    <td class="hora">09:00</td>
+                    <td class="hora">18:00</td>
+                    <td><span class="badge-consultorio">Apoyo Gral</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

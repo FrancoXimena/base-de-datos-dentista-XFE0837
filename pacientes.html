@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Franco Enríquez Ximena</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00a896;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #028090;
+            margin: 0;
+            font-size: 24px;
+        }
+        .btn-regresar {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-regresar:hover {
+            background-color: #00a896;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f2f7f7;
+            color: #028090;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f9fbfb;
+        }
+        .badge-alergia {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .badge-ninguna {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dentista Franco Enríquez Ximena</h1>
+        <button class="btn-regresar" onclick="window.history.back();">← Regresar</button>
+    </header>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Paciente</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Género</th>
+                    <th>Teléfono</th>
+                    <th>Alergias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Carlos</td>
+                    <td>Ruiz Esparza</td>
+                    <td>1985-03-12</td>
+                    <td>M</td>
+                    <td>555-0101</td>
+                    <td><span class="badge-ninguna">Ninguna</span></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Ana María</td>
+                    <td>López Silva</td>
+                    <td>1990-07-22</td>
+                    <td>F</td>
+                    <td>555-0102</td>
+                    <td><span class="badge-alergia">Penicilina</span></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Roberto</td>
+                    <td>Gómez Vera</td>
+                    <td>1978-11-05</td>
+                    <td>M</td>
+                    <td>555-0103</td>
+                    <td><span class="badge-alergia">Látex</span></td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Lucía</td>
+                    <td>Méndez Fer</td>
+                    <td>2015-01-30</td>
+                    <td>F</td>
+                    <td>555-0104</td>
+                    <td><span class="badge-ninguna">Ninguna</span></td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Sergio</td>
+                    <td>Torres P.</td>
+                    <td>1982-05-14</td>
+                    <td>M</td>
+                    <td>555-0105</td>
+                    <td><span class="badge-alergia">Aspirina</span></td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Elena</td>
+                    <td>Castaño M.</td>
+                    <td>1995-12-08</td>
+                    <td>F</td>
+                    <td>555-0106</td>
+                    <td><span class="badge-ninguna">Ninguna</span></td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Mario</td>
+                    <td>Delgado H.</td>
+                    <td>1965-09-17</td>
+                    <td>M</td>
+                    <td>555-0107</td>
+                    <td><span class="badge-alergia">Polen</span></td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>Sofía</td>
+                    <td>Ibarra G.</td>
+                    <td>2002-02-28</td>
+                    <td>F</td>
+                    <td>555-0108</td>
+                    <td><span class="badge-ninguna">Ninguna</span></td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>Javier</td>
+                    <td>Solís Luna</td>
+                    <td>1988-06-10</td>
+                    <td>M</td>
+                    <td>555-0109</td>
+                    <td><span class="badge-alergia">AINES</span></td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Patricia</td>
+                    <td>Vega Soto</td>
+                    <td>1973-04-25</td>
+                    <td>F</td>
+                    <td>555-0110</td>
+                    <td><span class="badge-ninguna">Ninguna</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Franco Enríquez Ximena - Citas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00a896;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #028090;
+            margin: 0;
+            font-size: 24px;
+        }
+        .btn-regresar {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-regresar:hover {
+            background-color: #00a896;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f2f7f7;
+            color: #028090;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f9fbfb;
+        }
+        .hora {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #4a5568;
+        }
+        /* Estilos de las etiquetas de Estado */
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .completada {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .cancelada {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .confirmada {
+            background-color: #e1f5fe;
+            color: #0288d1;
+        }
+        .pendiente {
+            background-color: #fff3e0;
+            color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dentista Franco Enríquez Ximena - Control de Citas</h1>
+        <button class="btn-regresar" onclick="window.history.back();">← Regresar</button>
+    </header>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Cita</th>
+                    <th>ID Paciente</th>
+                    <th>ID Personal</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5001</td>
+                    <td>101</td>
+                    <td>01</td>
+                    <td>2026-05-11</td>
+                    <td class="hora">09:30</td>
+                    <td><span class="badge completada">Completada</span></td>
+                </tr>
+                <tr>
+                    <td>5002</td>
+                    <td>102</td>
+                    <td>02</td>
+                    <td>2026-05-12</td>
+                    <td class="hora">11:00</td>
+                    <td><span class="badge completada">Completada</span></td>
+                </tr>
+                <tr>
+                    <td>5003</td>
+                    <td>103</td>
+                    <td>03</td>
+                    <td>2026-05-11</td>
+                    <td class="hora">16:00</td>
+                    <td><span class="badge cancelada">Cancelada</span></td>
+                </tr>
+                <tr>
+                    <td>5004</td>
+                    <td>104</td>
+                    <td>04</td>
+                    <td>2026-05-16</td>
+                    <td class="hora">09:00</td>
+                    <td><span class="badge confirmada">Confirmada</span></td>
+                </tr>
+                <tr>
+                    <td>5005</td>
+                    <td>105</td>
+                    <td>01</td>
+                    <td>2026-05-13</td>
+                    <td class="hora">10:00</td>
+                    <td><span class="badge pendiente">Pendiente</span></td>
+                </tr>
+                <tr>
+                    <td>5006</td>
+                    <td>106</td>
+                    <td>02</td>
+                    <td>2026-05-14</td>
+                    <td class="hora">12:30</td>
+                    <td><span class="badge confirmada">Confirmada</span></td>
+                </tr>
+                <tr>
+                    <td>5007</td>
+                    <td>107</td>
+                    <td>09</td>
+                    <td>2026-05-13</td>
+                    <td class="hora">17:00</td>
+                    <td><span class="badge pendiente">Pendiente</span></td>
+                </tr>
+                <tr>
+                    <td>5008</td>
+                    <td>108</td>
+                    <td>05</td>
+                    <td>2026-05-11</td>
+                    <td class="hora">12:00</td>
+                    <td><span class="badge completada">Completada</span></td>
+                </tr>
+                <tr>
+                    <td>5009</td>
+                    <td>109</td>
+                    <td>03</td>
+                    <td>2026-05-15</td>
+                    <td class="hora">15:30</td>
+                    <td><span class="badge confirmada">Confirmada</span></td>
+                </tr>
+                <tr>
+                    <td>5010</td>
+                    <td>110</td>
+                    <td>04</td>
+                    <td>2026-05-23</td>
+                    <td class="hora">10:30</td>
+                    <td><span class="badge pendiente">Pendiente</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

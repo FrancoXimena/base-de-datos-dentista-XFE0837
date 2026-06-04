@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Franco Enríquez Ximena - Personal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00a896;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #028090;
+            margin: 0;
+            font-size: 24px;
+        }
+        .btn-regresar {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-regresar:hover {
+            background-color: #00a896;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f2f7f7;
+            color: #028090;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f9fbfb;
+        }
+        .nombre-personal {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        /* Estilos para los diferentes cargos */
+        .badge-cargo {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .titular {
+            background-color: #e1f5fe;
+            color: #01579b;
+            font-weight: 600;
+        }
+        .odontologo {
+            background-color: #e8eaf6;
+            color: #1a237e;
+        }
+        .asistente {
+            background-color: #e8f5e9;
+            color: #1b5e20;
+        }
+        .recepcion {
+            background-color: #eceff1;
+            color: #37474f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dentista Franco Enríquez Ximena - Personal de Clínica</h1>
+        <button class="btn-regresar" onclick="window.history.back();">← Regresar</button>
+    </header>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Personal</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Especialidad</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td class="nombre-personal">Dr. Hugo</td>
+                    <td>Sánchez</td>
+                    <td>Cirugía Bucal</td>
+                    <td><span class="badge-cargo titular">Odontólogo Titular</span></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td class="nombre-personal">Dra. Elena</td>
+                    <td>Martínez</td>
+                    <td>Endodoncia</td>
+                    <td><span class="badge-cargo odontologo">Odontólogo</span></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td class="nombre-personal">Dr. Luis</td>
+                    <td>Pardo</td>
+                    <td>Ortodoncia</td>
+                    <td><span class="badge-cargo odontologo">Odontólogo</span></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td class="nombre-personal">Dra. Sara</td>
+                    <td>Rivas</td>
+                    <td>Odontopediatría</td>
+                    <td><span class="badge-cargo odontologo">Odontólogo</span></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td class="nombre-personal">Carla</td>
+                    <td>Jiménez</td>
+                    <td>General</td>
+                    <td><span class="badge-cargo asistente">Higienista</span></td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td class="nombre-personal">Mónica</td>
+                    <td>Galindo</td>
+                    <td>General</td>
+                    <td><span class="badge-cargo asistente">Higienista</span></td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td class="nombre-personal">Pedro</td>
+                    <td>Páramo</td>
+                    <td>Administración</td>
+                    <td><span class="badge-cargo recepcion">Recepcionista</span></td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td class="nombre-personal">Rosa</td>
+                    <td>Isela</td>
+                    <td>Administración</td>
+                    <td><span class="badge-cargo recepcion">Recepcionista</span></td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td class="nombre-personal">Dra. Ana</td>
+                    <td>Brizuela</td>
+                    <td>Periodoncia</td>
+                    <td><span class="badge-cargo odontologo">Odontólogo</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="nombre-personal">Jorge</td>
+                    <td>Negrete</td>
+                    <td>General</td>
+                    <td><span class="badge-cargo asistente">Asistente Dental</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
